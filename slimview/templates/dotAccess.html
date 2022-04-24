@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>テンプレート変数のドットアクセス</h1>
+    <section>
+        <h2>連想配列の要素</h2>
+        <p>{{item.name}}</p>
+    </section>
+    <section>
+        <h2>クラスのpublicプロパティ</h2>
+        <p>{{dotAccessData.depName}}</p>
+    </section>
+    <section>
+        <h2>クラスのメソッド</h2>
+        <p>{{dotAccessData.makeMessage}}</p>
+    </section>
+    <section>
+        <h2>ゲッタの戻り値</h2>
+        <p>{{dotAccessData.csName}}</p>
+    </section>
+    <section>
+        <h2>判定メソッドの戻り値</h2>
+        <p>{{dotAccessData.flgOn}}</p>
+    </section>
+    <section>
+        <h2>存在確認メソッドの戻り値</h2>
+        <p>{{dotAccessData.middleParam}}</p>
+    </section>
+    <section>
+        <h2>存在しない値</h2>
+        <p>{{mue}}</p>
+    </section>
+</body>
+</html>

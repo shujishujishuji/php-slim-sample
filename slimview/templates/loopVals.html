@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        {% for key, value in resultList %}
+        <li>
+            {% if loop.first %}
+            ループの始まり<br>
+            {% endif %}
+            {{loop.index}}回目: {{key}}は{{value}}です。残り回数は{{loop.revindex0}}回です。
+            {% if loop.last %}
+            <br>ループの終わり
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
